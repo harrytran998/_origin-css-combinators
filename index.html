@@ -1,11 +1,46 @@
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <style>
+      header {
+        color: #2563eb;
+      }
+      section {
+        display: flex;
+        gap: 40px;
+      }
+
+      section header {
+        color: #ea580c;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <header>
+      <h1>Header ở trên top nè</h1>
+    </header>
+    <section id="list-news">
+      <article>
+        <header>
+          <h1>Post 1</h1>
+          <p>Some additional information here</p>
+        </header>
+        <div>
+          <p>Lorem Ipsum dolor set amet....</p>
+          <p>Posted by John Doe</p>
+        </div>
+      </article>
+      <article>
+        <header>
+          <h1>Post 2</h1>
+          <p>Posted by John Doe</p>
+        </header>
+        <div>
+          <p>Some additional information here</p>
+          <p>Lorem Ipsum dolor set amet....</p>
+        </div>
+      </article>
+    </section>
   </body>
 </html>
