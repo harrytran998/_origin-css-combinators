@@ -17,30 +17,36 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>Header ở trên top nè</h1>
-    </header>
-    <section id="list-news">
-      <article>
-        <header>
-          <h1>Post 1</h1>
-          <p>Some additional information here</p>
-        </header>
-        <div>
-          <p>Lorem Ipsum dolor set amet....</p>
-          <p>Posted by John Doe</p>
-        </div>
-      </article>
-      <article>
-        <header>
-          <h1>Post 2</h1>
-          <p>Posted by John Doe</p>
-        </header>
-        <div>
-          <p>Some additional information here</p>
-          <p>Lorem Ipsum dolor set amet....</p>
-        </div>
-      </article>
-    </section>
+    <h1>Hello there!</h1>
+    <label for="cake">Chọn bánh nào:</label>
+    <input list="cakes" name="cake" id="cake" />
+    <datalist id="cakes">
+      <option value="Bánh Gato"></option>
+      <option value="Bánh Dừa"></option>
+      <option value="Bánh Socola"></option>
+      <option value="Bánh Orion"></option>
+      <option value="Bánh Gạo"></option>
+    </datalist>
+    <br />
+    <br />
+    <br />
+    <label for="candy">Chọn kẹo nào:</label>
+    <input list="candies" name="candy" id="candy" />
+    <datalist id="candies">
+      <option value="Kẹo Sữa"></option>
+      <option value="Kẹo Cu Đơ"></option>
+      <option value="Kẹo Kéo"></option>
+      <option value="Kẹo Mút"></option>
+      <option value="Kẹo Viên Socola"></option>
+    </datalist>
+    <br />
+    <br />
+    <button onclick="handleSubmit()" style="width: 200px; text-align: center">
+      Chốt kèo
+    </button>
+    <p>
+      Bạn đã chọn <span id="selectedCandy"></span> và
+      <span id="selectedCake"></span>
+    </p>
   </body>
 </html>
