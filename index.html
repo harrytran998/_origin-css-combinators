@@ -22,7 +22,7 @@
 
     <h3>Qua page mới trải nghiệm thứ mới</h3>
 
-    <form action="handleSubmit()">
+    <form action="handleSubmit()" method="GET" target="_self">
       <label for="cake">Chọn bánh nào:</label>
       <input list="cakes" name="cake" id="cake" />
       <datalist id="cakes">
@@ -46,14 +46,11 @@
       </datalist>
       <br />
       <br />
-      <button onclick="handleSubmit()" style="width: 200px; text-align: center">
-        Chốt kèo
-      </button>
       <p>
         Bạn đã chọn <span id="selectedCandy"></span> và
         <span id="selectedCake"></span>
       </p>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Chốt kèo" />
       <input type="reset" value="Reset form" />
     </form>
   </body>
