@@ -408,7 +408,7 @@
   /**
    * The font family
    */
-  "editor.fontFamily": "Roboto"
+  "editor.fontFamily": "Fira Code"
   /**
    * The font weight
    */
