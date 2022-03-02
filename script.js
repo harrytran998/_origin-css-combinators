@@ -12,3 +12,7 @@ function handleSubmit(event) {
     selectedCandy.innerHTML = candy.value;
   }
 }
+
+const form = document.getElementById('form');
+const log = document.getElementById('log');
+form.addEventListener('submit', logSubmit);
